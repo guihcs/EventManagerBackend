@@ -1,0 +1,40 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-web
+    compile group: 'org.springframework', name: 'spring-web', version: '5.2.8.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.3.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb
+    compile group: 'org.springframework.data', name: 'spring-data-mongodb', version: '3.0.3.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-core
+    compile group: 'org.mongodb', name: 'mongodb-driver-core', version: '4.1.0'
+
+    // https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync
+    compile group: 'org.mongodb', name: 'mongodb-driver-sync', version: '4.1.0'
+
+    // https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-reactivestreams
+    compile group: 'org.mongodb', name: 'mongodb-driver-reactivestreams', version: '4.1.0'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.2'
+
+}
+
+
+
+
